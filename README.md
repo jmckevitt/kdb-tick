@@ -25,15 +25,15 @@ feedhandler: 5014
 
 You can kick off all the processes with the following command:  
 ```
-C:\Users\Joseph\Documents\kdb-tick-master>python start.py start all
-Enter project directory: C:\Users\Joseph\Documents\kdb-tick-master
+C:\Users\jmckevitt\Documents\kdb-tick-master>python start.py start all
+Enter project directory: C:\Users\jmckevitt\Documents\kdb-tick-master
 Batching mode? **0 for non batching, >0 for batching**: 1000
 ```
 For the first prompt enter the working directory, for the second, set the timer
 
 And now testing the result:
 ```
-C:\Users\Joseph\Documents\kdb-tick-master>python start.py test all
+C:\Users\jmckevitt\Documents\kdb-tick-master>python start.py test all
 tickerplant : UP
 
 rdb1 : UP
@@ -101,14 +101,14 @@ Exercise 2 should be contained within the word document.
 ---
 Python script:
 ```
-C:\Users\Joseph\Documents\kdb-tick-master>python csvLoad.py
+C:\Users\jmckevitt\Documents\kdb-tick-master>python csvLoad.py
 :localhost:5010
 IPC version: 3. Is connected: True
 Check table in tickerplant
 ```
 The Java script has already been compiled, so you can just call the class:
 ```
-C:\Users\Joseph\Documents\kdb-tick-master>java csvLoad
+C:\Users\jmckevitt\Documents\kdb-tick-master>java csvLoad
 Sent records to KDB server
 2019.04.09D15:25:03.727042998
 ```
