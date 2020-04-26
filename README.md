@@ -53,31 +53,31 @@ q)h:hopen 5011 /rdb 1, which subscribes to trade and quote
 q)h"select from trade"
 time                          sym   size price    exchange
 ----------------------------------------------------------
-2019.04.23D20:40:25.866584000 BA.N  24   128.0466 LSE
-2019.04.23D20:40:25.866584000 VOD.L 40   341.3296 CME
-2019.04.23D20:40:26.866243000 VOD.L 40   341.319  LSE
-2019.04.23D20:40:26.866243000 VOD.L 20   341.3377 TSE
-2019.04.23D20:40:27.866827000 BA.N  12   128.0449 HKSE
+2020.04.23D20:40:25.866584000 BA.N  24   128.0466 LSE
+2020.04.23D20:40:25.866584000 VOD.L 40   341.3296 CME
+2020.04.23D20:40:26.866243000 VOD.L 40   341.319  LSE
+2020.04.23D20:40:26.866243000 VOD.L 20   341.3377 TSE
+2020.04.23D20:40:27.866827000 BA.N  12   128.0449 HKSE
 ..
 q)h"select from quote"
 time                          sym    bid      ask      bidSize askSize exchange
 -------------------------------------------------------------------------------
-2019.04.23D20:40:24.966139000 GS.N   178.493  178.5151 3       21      NYSE
-2019.04.23D20:40:24.966139000 VOD.L  341.2972 341.3133 45      0       LSE
-2019.04.23D20:40:25.066842000 IBM.N  191.0963 191.1003 10      4       CME
-2019.04.23D20:40:25.066842000 GS.N   178.4984 178.5128 12      12      TSE
-2019.04.23D20:40:25.166716000 MSFT.O 45.14983 45.15049 3       1       TSE
+2020.04.23D20:40:24.966139000 GS.N   178.493  178.5151 3       21      NYSE
+2020.04.23D20:40:24.966139000 VOD.L  341.2972 341.3133 45      0       LSE
+2020.04.23D20:40:25.066842000 IBM.N  191.0963 191.1003 10      4       CME
+2020.04.23D20:40:25.066842000 GS.N   178.4984 178.5128 12      12      TSE
+2020.04.23D20:40:25.166716000 MSFT.O 45.14983 45.15049 3       1       TSE
 ..
 q)hclose h
 q)hopen 5013 / rdb 2, which subscribes to agg table
 q)h"select from agg"
 time                          sym    maxTrade maxBid   minAsk   tradeVolume
 ---------------------------------------------------------------------------
-2019.04.23D20:40:25.766505000 BA.N   128.0603 128.0549 127.8468 6292
-2019.04.23D20:40:24.966139000 GS.N   178.538  178.5379 177.9855 5883
-2019.04.23D20:40:25.066842000 IBM.N  191.1314 191.1258 190.7725 3046
-2019.04.23D20:40:25.166716000 MSFT.O 45.16717 45.16484 45.09669 1944
-2019.04.23D20:40:24.966139000 VOD.L  341.5426 341.5388 340.7407 10240
+2020.04.23D20:40:25.766505000 BA.N   128.0603 128.0549 127.8468 6292
+2020.04.23D20:40:24.966139000 GS.N   178.538  178.5379 177.9855 5883
+2020.04.23D20:40:25.066842000 IBM.N  191.1314 191.1258 190.7725 3046
+2020.04.23D20:40:25.166716000 MSFT.O 45.16717 45.16484 45.09669 1944
+2020.04.23D20:40:24.966139000 VOD.L  341.5426 341.5388 340.7407 10240
 q)hclose h
 ```
 E1 P9 (compressing the data and saving it to the HDB) does not run on my machine, as my q install doesn't seem to have zlib (`The specified module could not be found.zlib` is the error message I get), so I'm going to have to hope that it would work otherwise
@@ -110,7 +110,7 @@ The Java script has already been compiled, so you can just call the class:
 ```
 C:\Users\jmckevitt\Documents\kdb-tick-master>java csvLoad
 Sent records to KDB server
-2019.04.09D15:25:03.727042998
+2020.04.21D15:25:03.727042998
 ```
 
 For the HTML script, I modified a script I found on code.kx.com to query the trade table in RDB 1 for a specific symbol (e.g. VOD.L), just enter a symbol in the text box and the press 'Go'.
