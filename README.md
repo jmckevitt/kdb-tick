@@ -96,7 +96,7 @@ Also, despite the script being made to also use trade.csv, it will no longer wor
 
 ---
 
-Exercise 2 should be contained within the word document.
+Exercise 2 is contained within the word document
 
 ---
 Python script:
